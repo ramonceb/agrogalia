@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<!-- <script type="text/javascript" src="https://drive.google.com/uc?id=1JTp8wV2WMlBKZHLP86tM3b1HKEh5CtXV" ></script> -->
+<!-- <script type="text/javascript" src="https://drive.google.com/uc?id=1jZbnPv2_DFrswL4qw9y9hGv3kCafePye" ></script> -->
+<!-- <script type="text/javascript" src="https://drive.google.com/uc?id=1umQFPjigf6-SvPzJ6Rr7t6j85sZNy7AR" ></script>  -->
+<script type="text/javascript" src="js/busquedaNombre.js" ></script> 
+<!-- <script type="text/javascript" src="js/agroquimicosList_no_dinamico.js" ></script>  -->
+<style>
+* {
+ box-sizing: border-box;
+}
+
+
+
+@media handheld
+body{width:98%;font-family:Verdana;font-size:16px;} 
+
+#myInput {
+ background-image: url('/css/searchicon.png');
+ background-position: 10px 10px;
+ background-repeat: no-repeat;
+ width: 100%;
+ font-size: 14px;
+ padding: 5px 20px 12px 10px;
+ border: 1px solid #ddd;
+ margin-bottom: 10px;
+}
+
+#myTable {
+ border-collapse: collapse;
+ 
+ width: 100%;
+  
+ border: 1px solid #ddd;
+ font-size: 14px;
+}
+
+#myTable th, #myTable td {
+	 background-position; center;
+	 background-repeat: no-repeat;
+ text-align: left;
+ padding: 10px;
+ 
+
+}
+.insect{  background-image: url('https://es.uplonline.com/product_type/leafs/JYbG5dhQCAhkGd1L8OK0HN5XHePkxrCP3vCTWMvY.png');background-repeat: no-repeat; background-position:center;}
+
+.insectUpl{  background-image: url('https://es.uplonline.com/product_type/leafs/JJb9wICgMhSFjdvcx4KXSI2558RY5PTnaVLfy9Fl.png');background-repeat: no-repeat;background-position:center;}
+.insectUplGreen{  background-image: url('https://es.uplonline.com/product_type/leafs/yIYVj9dsdzzKjFff6rxPUR58rYsrdyGXOvxlfjGl.png');background-repeat: no-repeat;background-position:center;}
+.insectUplPurple{  background-image: url('https://es.uplonline.com/product_type/leafs/m8aIC0EIhW2BkqWbJrz677kGW0DfhLqJPKtv0ads.png');
+background-repeat: no-repeat;background-position:center;}
+#myTable tr {
+ border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+ background-color: #f1f1f1;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+    height: 100%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.iframe{
+  width: 100%; /* Full width */
+  height:100%; /* Full height */
+
+}
+</style>
+</head>
+<body>
+
+<p>Click the button to alert the innerHTML of the first cell (td element with index 0) in the table's first row.</p>
+
+<h2>Busqueda de producto</h2>
+
+<select id="agrogalia_cosechas" name="agrogalia_cosechas" style="width:240px;" class="agrogalia_cosechas">
+<option value="">Seleccione una cosecha</option>
+<option value="alfalfa">alfalfa</option>
+<option value="cereales">cereales</option>
+<option value="céspedes">céspedes</option>
+<option value="citricos">citricos</option>
+<option value="fresales">fresales</option>
+<option value="frutales">frutales</option>
+<option value="hortícolas">hortícolas</option>
+<option value="maíz">maíz</option>
+<option value="olivo">olivo</option>
+<option value="ornamentales">ornamentales</option>
+<option value="patata">patata</option>
+<option value="platanera">platanera</option>
+<option value="remolacha">remolacha</option>
+<option value="vid">vid</option>
+<option value="albaricoquero">Albaricoquero</option>
+<option value="alcachofa">Alcachofa</option>
+<option value="algodon">Algodón</option>
+<option value="arroz">Arroz</option>
+<option value="berenjena">Berenjena</option>
+<option value="calabacin">Calabacín</option>
+<option value="cebada">Cebada</option>
+<option value="cerezo">Cerezo</option>
+<option value="ciruelo">Ciruelo</option>
+<option value="coles">Coles</option>
+<option value="fresas">Fresas</option>
+<option value="judias">Judías</option>
+<option value="lechuga">Lechuga</option>
+<option value="limonero">Limonero</option>
+<option value="maiz">Maíz</option>
+<option value="mandarino">Mandarino</option>
+<option value="manzano">Manzano</option>
+<option value="melocotonero">Melocotonero</option>
+<option value="melon">Melón</option>
+<option value="naranjo">Naranjo</option>
+<option value="nectarino">Nectarino</option>
+<option value="olivo">Olivo</option>
+<option value="ornamentales_herbaceas">Ornamentales Herbáceas</option>
+<option value="patata">Patata</option>
+<option value="pepino">Pepino</option>
+<option value="peral">Peral</option>
+<option value="pimiento">Pimiento</option>
+<option value="remolacha">Remolacha</option>
+<option value="sandia">Sandía</option>
+<option value="tomate">Tomate</option>
+<option value="trigo">Trigo</option>
+<option value="uva_de_mesa">Vid de Mesa</option>
+<option value="uva_para_vinificacion">Vid para Vinificación</option></select>
+<button id="generaTabla" >Try it</button>
+
+<input type="text" id="filtroTexto"  placeholder="Busca por nombre.." title="Type in a name">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+
+</div>
+
+
+</body>
+</html>

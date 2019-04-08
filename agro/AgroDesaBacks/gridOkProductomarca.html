@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Producto Agrogalia</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+         <!-- uplobj js/altIframe.js js/altIframeMar.js https://drive.google.com/uc?id=1sXWKLHKr7DGlf024UUcXVMsXC3mpmfvV-->
+        <script type="text/javascript" src="C:\Users\R2\Desktop\agroquimicosList.js"></script>
+        <!--Bootstrap css-->
+        <link href="https://drive.google.com/uc?id=1vkYHKzr0PtPFPfnDbxcWjwrj9P1L-IXg" rel="stylesheet" type="text/css" media="all">
+        <!--style css-->
+        <link href="https://drive.google.com/uc?id=1wyzyVEHUgEOFz9SuVF1A-AW1xpSl7U7i" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/tabs.css" />
+		<link rel="stylesheet" type="text/css" href="css/tabstyles.css" /><link rel="stylesheet" type="text/css" href="css/otra.css" />
+  		<script src="js/modernizr.custom.js"></script><base id="ruta" href="https://www.cropscience.bayer.es/es-ES/Productos/" >
+		<!-- </head> integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+		<svg class="hidden">
+			<defs>
+				<path id="tabshape" d="M80,60C34,53.5,64.417,0,0,0v60H80z"/>
+			</defs>
+		</svg>
+		   <!-- PRODUCTOS --> 
+		   <div class="content">
+<div id="agrogalia_productos" class="agrogalia_productos wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;"> <!-- jquery/3.3.1       -->
+	  <script src="https://drive.google.com/uc?id=1OuX_zwA9VO7iakdrdivnfn0Rc0Ybnwrf"></script>
+        <script src="https://drive.google.com/uc?id=1BqxxOhfVrIZ2IsGKCXzUxVAgjmVdlTtz"></script>
+  <style> <!-- bootstrap -->
+    <link href="https://drive.google.com/uc?id=1vkYHKzr0PtPFPfnDbxcWjwrj9P1L-IXg" rel="stylesheet" type="text/css" media="all"></style>
+  
+			<div class="container">
+				
+        <div class="containerProd">
+		   
+             <h2>Filtrado de productos</h2>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#prod_agro">AGROQUIMICOS</a>
+                </li>
+                <li><a data-toggle="tab" href="#prod_comviti">COMPONENTES VITICULTURA</a>
+                </li>
+                <li><a data-toggle="tab" href="#prod_maq">MAQUINARIA</a>
+                </li>
+                <li><a data-toggle="tab" href="#servi_ofitec">OFICINA TECNICA</a>
+                </li>
+                <li><a data-toggle="tab" href="#servi_agro">AGROSERVICIOS</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="prod_agro" class="tab-pane fade in active">
+                     <p><strong>AGROQUIMICOS</strong></p>
+                    <ul class="nav nav-tabs">
+                        <li class="tab-content"><a id="cargaTodosFitosanitarios" data-toggle="tab" href="#prod_agro_fito">Fitosanitarios</a>
+                        </li>
+                        <li><a data-toggle="tab" href="#prod_agro_aes" alt="prueba">Abonos-Enmiendas y Sustratos.</a>
+                        </li>
+                        <li><a data-toggle="tab" href="#prod_agro_fibi">Fitoprotectores y Bioestimulantes</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="tab-content">  <!--style css-->
+     <style>   <link href="https://drive.google.com/uc?id=1wyzyVEHUgEOFz9SuVF1A-AW1xpSl7U7i" rel="stylesheet" type="text/css" media="all" /></style>
+                        <div id="prod_agro_fito" class="tab-pane fade col-md-12">
+                             <p><strong>Fitosanitarios</p></strong>
+                            <!-- cat fito -->
+                            <div id="myBtnContainer">
+                                <button class="btn active" onclick="filterSelection('all')" style="hidden=true;">Categorias</button>
+								        <button id="cargaFitoFun" class="btn" onclick="filterSelection('prod_agro_fito_fungi')">FUNGICIDAS</button>
+   <button id="cargaFitoInsect" class="btn" onclick="filterSelection('prod_agro_fito_insect')">INSECTICIDAS</button>
+    <button id="cargaFitoAc" class="btn" onclick="filterSelection('prod_agro_fito_aca')">ACARICIDAS</button>
+	     <button id="cargaFitoHe" class="btn" onclick="filterSelection('prod_agro_fito_herbi')" alt="/">HERBICIDAS</button>
+                                <button id="cargaFitoRe" class="btn" onclick="filterSelection('prod_agro_fito_fitor')">FITORREGULADORES</button>
+                                <button id="cargaFitoDiver" class="btn" onclick="filterSelection('prod_agro_fito_diver')">DIVERSOS</button>
+                            </div>
+														<div id="myBtnContainerMarca">
+ <button class="btn active" onclick="filterSelectionMarca('all')"> Marcas</button>
+  
+  <button class="btn" onclick="filterSelectionMarca('respContainer_bayer')"> BAYER CROPSCIENCE</button>
+  <button class="btn" onclick="filterSelectionMarca('respContainer_sapec')"> SAPEC AGRO</button>
+  <button class="btn" onclick="filterSelectionMarca('respContainer_upl')"><img src="https://es.uplonline.com/images/logo.png" width="25%"></button>  <button class="btn" onclick="filterSelectionMarca('respContainer_agri')"><img src="http://agrichembio.com/wp-content/themes/agrichembio/images/logo-header-agrichembio.png" width="55%"></button>
+ <button class="btn" onclick="filterSelectionMarca('respContainer_compo')"> BAYER CROPSCIENCE</button>
+  <button class="btn" onclick="filterSelectionMarca('respContainer_daymsa')"> SAPEC AGRO</button>
+</div>
+                            <div id="respContainer" class="respContainer section_producto_agro group_producto_agro">
+								<div id="respContainer_bayer" class="respContainer_bayer showMarca "></div>
+								<div id="respContainer_upl" class="respContainer_upl showMarca "></div>
+								<div id="respContainer_sapec" class="respContainer_sapec showMarca ">
+								</div>
+								<div id="respContainer_agri" class="respContainer_agri showMarca ">
+								</div>	<div id="respContainer_compo" class="respContainer_agri showMarca ">
+								</div>	<div id="respContainer_daymsa" class="respContainer_agri showMarca ">
+								</div>
+								<!-- section_producto_agro group_producto_agro" -->
+								
+                              
+                            </div>
+                        </div>
+                        <div id="prod_agro_aes" class="tab-pane fade ">
+                             <p><strong>Abonos-Enmiendas y Sustratos. </p></strong>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div id="prod_agro_fibi" class="tab-pane fade">
+                             <p><strong>Fitoprotectores y Bioestimulantes </p></strong>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="prod_comviti" class="tab-pane fade in">
+                     <p><strong>COMPONENTES VITICULTURA </p></strong>
+                   <section>
+				<div class="tabs tabs-style-circlefill">
+					<nav>
+						<ul>
+							<li><a id="cargaTodosFitosanitarios" href="#prod_agro_fito" class="icon icon-plug"><span>Fitosanitarios</span></a></li>
+							<li><a href="#section-circlefill-2" class="icon icon-gift"><span>Gifts</span></a></li>
+							<li><a href="#section-circlefill-3" class="icon icon-box"><span>Boxes</span></a></li>
+							<li><a href="#section-circlefill-4" class="icon icon-date"><span>Prints</span></a></li>
+							<li><a href="#section-circlefill-5" class="icon icon-plane"><span>Fun</span></a></li>
+						</ul>
+					</nav>
+					<div class="content-wrap">
+						<section id="prod_agro_fito" >  <div id="prod_agro_fito" class="tab-pane fade col-md-12">
+                           
+                             <p><strong>Fitosanitarios</p></strong>
+                            <!-- cat fito -->
+                            <div id="myBtnContainer">
+                                <button class="btn active" onclick="filterSelection('all')" style="hidden=true;">Categorias</button>
+								        <button id="cargaFitoFun" class="btn" onclick="filterSelection('prod_agro_fito_fungi')">FUNGICIDAS</button>
+   <button id="cargaFitoInsect" class="btn" onclick="filterSelection('prod_agro_fito_insect')">INSECTICIDAS</button>
+    <button id="cargaFitoAc" class="btn" onclick="filterSelection('prod_agro_fito_aca')">ACARICIDAS</button>
+	     <button id="cargaFitoHe" class="btn" onclick="filterSelection('prod_agro_fito_herbi')" alt="/">HERBICIDAS</button>
+                                <button id="cargaFitoRe" class="btn" onclick="filterSelection('prod_agro_fito_fitor')">FITORREGULADORES</button>
+                                <button id="cargaFitoDiver" class="btn" onclick="filterSelection('prod_agro_fito_diver')">DIVERSOS</button>
+                            </div>
+														<div id="myBtnContainerMarca">
+ <button class="btn active" onclick="filterSelectionMarca('all')"> Marcas</button>
+  
+  <button class="btn" onclick="filterSelectionMarca('respContainer_bayer')"> BAYER CROPSCIENCE</button>
+  <button class="btn" onclick="filterSelectionMarca('respContainer_sapec')"> SAPEC AGRO</button>
+  <button class="btn" onclick="filterSelectionMarca('respContainer_upl')"><img src="https://es.uplonline.com/images/logo.png" width="25%"></button>  <button class="btn" onclick="filterSelectionMarca('respContainer_agri')"><img src="http://agrichembio.com/wp-content/themes/agrichembio/images/logo-header-agrichembio.png" width="55%"></button>
+ 
+</div>
+                            <div id="respContainer" class="respContainer section_producto_agro group_producto_agro">
+								<div id="respContainer_bayer" class="respContainer_bayer showMarca "></div>
+								<div id="respContainer_upl" class="respContainer_upl showMarca "></div>
+								<div id="respContainer_sapec" class="respContainer_sapec showMarca ">
+								</div>
+								<div id="respContainer_agri" class="respContainer_agri showMarca ">
+								</div>	<div id="respContainer_agri" class="respContainer_agri showMarca ">
+								</div>	<div id="respContainer_agri" class="respContainer_agri showMarca ">
+								</div>
+								<!-- section_producto_agro group_producto_agro" -->
+								
+                              
+                            </div>
+                  
+                        </div>
+											</section>
+						<section id="section-circlefill-2"><p>2</p></section>
+						<section id="section-circlefill-3"><p>3</p></section>
+						<section id="section-circlefill-4"><p>4</p></section>
+						<section id="section-circlefill-5"><p>5</p></section>
+					</div><!-- /content -->
+				</div><!-- /tabs -->
+			</section>
+                </div>
+                <div id="prod_maq" class="tab-pane fade">
+                     <h3>MAQUINARIA</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div id="servi_ofitec" class="tab-pane fade">
+                     <h3>OFICINA TECNIC</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                </div>
+                <div id="servi_agro" class="tab-pane fade">
+                     <h3>AGROSERVICIOS</h3>
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+            </div>
+			<!--Modal: Name-->
+<div class="modal" id="modal-prod" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+  <div class="modal-dialog modal-lg" role="document">
+
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Body-->
+      <div class="modal-body mb-0 p-0">
+
+        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+          <iframe  id="prod_iframe" class="embed-responsive-item" src=""></iframe>
+        </div>
+
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        <span class="mr-4"></span>
+       
+
+        <button id="mod-close" type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" >Close</button>
+
+      </div>
+
+    </div>
+    <!--/.Content-->
+
+  </div>
+</div></div>
+<!--Modal: Name-->
+	
+        </div>
+        <script>
+            filterSelection("all");
+
+            function filterSelection(c) {
+
+                var x, i;
+                x = document.getElementsByClassName("filterDiv");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                    w3RemoveClass(x[i], "showProd col_producto_agro span_producto_agro1_of_6   ");
+                    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "showProd col_producto_agro span_producto_agro1_of_6   ");
+                }
+            }
+
+
+            function w3AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) {
+                        element.className += " " + arr2[i];
+                    }
+                }
+            }
+
+
+            function w3RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                        arr1.splice(arr1.indexOf(arr2[i]), 1);
+                    }
+                }
+                element.className = arr1.join(" ");
+            }
+              var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", " ");
+                    this.className+=" active" ;
+                });
+            }
+           //-- marcas -->
+   filterSelectionMarca("all");
+  
+
+            function filterSelectionMarca(c) {
+  var mostrar="none";
+ 
+                var x, i;
+                x = document.getElementsByClassName("respContainer");
+				var lista=x[0].children;
+			 for (i = 0; i < lista.length; i++) {
+			  if(c==="all") {mostrar="block";lista[i].style.display=mostrar;}
+			 console.log( lista.length+" "+lista[i].id);
+                if (lista[i].id !== c) {
+				//console.log(lista[i].id+" es igual "+c);
+				 lista[i].style.display=mostrar;
+				}else{
+             lista[i].style.display="block";}
+              
+			  
+			  
+			/*   x[i].className.replace("respContainer_bayer showMarca " , "respContainer_bayer ");
+                var div=x[i].id+"_"+c;       
+                if (x[i].id !==div){     
+                 alert("!==="+div);
+                x[i].className.replace("showMarca" + " ");
+                    //w3RemoveClassMarca(x[i], "showMarca");
+                    }
+                    if (x[i].className.indexOf(c) > -1) w3AddClassMarca(x[i], "showMarca");*/
+                
+                }
+            }
+
+
+            function w3AddClassMarca(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) {
+                        element.className += " " + arr2[i];
+                    }
+                }
+            }
+
+
+            function w3RemoveClassMarca(element, name,c) {
+			console.log(element.id+" "+name);
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                        arr1.splice(arr1.indexOf(arr2[i]), 1);
+                    }
+                }
+                element.className = arr1.join(" ");
+				filterBorraMarcaProducto(element,c);
+            }
+			 function filterBorraMarcaProducto(element,c) {
+
+                var x, i;
+                x = document.getElementsByClassName(c);
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                    w3RemoveClass(x[i], "showProd");
+                    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "showProd ");
+                }
+            }
+             
+			var btnContainerMarca = document.getElementById("myBtnContainerMarca");
+            var btns = btnContainerMarca.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", " ");
+                    this.className+=" active" ;
+                });
+            }
+        //--fin  marcas -->   
+         
+			function modalProducto(nombre){
+
+    var url=dameModalUrl(nombre);
+
+	creaModal(url);
+}
+
+var close= document.getElementById("mod-close");
+function creaModal(url){
+
+   var modal= document.getElementById("modal-prod");
+    //var iframe= document.createElement("IFRAME");
+    var iframe= document.getElementById("prod_iframe");
+    var base= document.getElementById("ruta");
+	 base.href=url;  
+   // iframe.setAttribute("id","ifPro");
+    iframe.setAttribute("src",base.href);
+	iframe.setAttribute("sandbox","allow-same-origin allow-scripts allow-popups allow-forms allow-popups-to-escape-sandbox");
+	//modal.setAttribute("id","myModal");
+	 modal.style.display = "block";
+	//$("#modal-prod").modal();
+  //$("#ifPro").iframe();
+    
+}
+// When the user clicks on <span> (x), close 
+close.onclick = function() {
+var modal= document.getElementById("modal-prod");
+    var iframe= document.getElementById("prod_iframe");
+ 
+  modal.style.display = "none"; 
+
+}
+        </script>
+		   <!-- PRODUCTOS <script src="js/cbpFWTabs.js"></script>
+		<script>
+			(function() {
+
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script>-->	
+	</body>
+</html>
+		   </body>
+</html>

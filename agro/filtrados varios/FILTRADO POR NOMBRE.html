@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+ box-sizing: auto;
+}
+
+#myInput {
+ background-image: url('/css/searchicon.png');
+ background-position: 10px 10px;
+ background-repeat: no-repeat;
+ width: 100%;
+ font-size: 14px;
+ padding: 5px 20px 12px 10px;
+ border: 1px solid #ddd;
+ margin-bottom: 10px;
+}
+
+#myTable {
+ border-collapse: collapse;
+ width: 100%;
+ border: 1px solid #ddd;
+ font-size: 14px;
+}
+
+#myTable th, #myTable td {
+ text-align: left;
+ padding: 10px;
+
+}
+.insect{  background-image: url('https://es.uplonline.com/product_type/leafs/JYbG5dhQCAhkGd1L8OK0HN5XHePkxrCP3vCTWMvY.png');background-repeat: no-repeat; background-position:center;}
+
+.insectUpl{  background-image: url('https://es.uplonline.com/product_type/leafs/JJb9wICgMhSFjdvcx4KXSI2558RY5PTnaVLfy9Fl.png');background-repeat: no-repeat;background-position:center;}
+.insectUplGreen{  background-image: url('https://es.uplonline.com/product_type/leafs/yIYVj9dsdzzKjFff6rxPUR58rYsrdyGXOvxlfjGl.png');background-repeat: no-repeat;background-position:center;}
+.insectUplPurple{  background-image: url('https://es.uplonline.com/product_type/leafs/m8aIC0EIhW2BkqWbJrz677kGW0DfhLqJPKtv0ads.png');
+background-repeat: no-repeat;background-position:center;}
+#myTable tr {
+ border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+ background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Busqueda de producto</h2>
+
+<select id="agrogalia_cosechas" name="agrogalia_cosechas" onchange="myFunction()" style="width:240px;" class="agrogalia_cosechas">
+<option value="">Seleccione una cosecha</option>
+<option value="albaricoquero">Albaricoquero</option>
+<option value="alcachofa">Alcachofa</option>
+<option value="algodon">Algodón</option>
+<option value="arroz">Arroz</option>
+<option value="berenjena">Berenjena</option>
+<option value="calabacin">Calabacín</option>
+<option value="cebada">Cebada</option>
+<option value="cerezo">Cerezo</option>
+<option value="ciruelo">Ciruelo</option>
+<option value="coles">Coles</option>
+<option value="fresas">Fresas</option>
+<option value="judias">Judías</option>
+<option value="lechuga">Lechuga</option>
+<option value="limonero">Limonero</option>
+<option value="maiz">Maíz</option>
+<option value="mandarino">Mandarino</option>
+<option value="manzano">Manzano</option>
+<option value="melocotonero">Melocotonero</option>
+<option value="melon">Melón</option>
+<option value="naranjo">Naranjo</option>
+<option value="nectarino">Nectarino</option>
+<option value="olivo">Olivo</option>
+<option value="ornamentales_herbaceas">Ornamentales Herbáceas</option>
+<option value="patata">Patata</option>
+<option value="pepino">Pepino</option>
+<option value="peral">Peral</option>
+<option value="pimiento">Pimiento</option>
+<option value="remolacha">Remolacha</option>
+<option value="sandia">Sandía</option>
+<option value="tomate">Tomate</option>
+<option value="trigo">Trigo</option>
+<option value="uva_de_mesa">Vid de Mesa</option>
+<option value="uva_para_vinificacion">Vid para Vinificación</option></select>
+
+<!--<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Busca por nombre.." title="Type in a name">-->
+
+
+
+
+<table id="myTable">
+ <tr class="header">
+
+  <th style="width:10%;">	NOMBRE</th>
+  <th style="width:10%;">	INGREDIENTE</th>
+  <th style="width:10%;" hidden="true">	IMG</th>
+	  <th style="width:10%;">	Cultivos1</th>
+  <th style="width:10%;">	Targets1</th> <th style="width:40%;">Descripción</th>
+ </tr>
+ <tr>
+ <td class="insect">PLANET PLUS</td>
+ <td>Ingrediente activo64% mancozeb8% metalaxil</td>
+ <td hidden="true"> <img src="https://es.uplonline.com/product_type/leafs/JYbG5dhQCAhkGd1L8OK0HN5XHePkxrCP3vCTWMvY.png"></td>
+ <td></td>
+ <td></td>
+ <td>Fungicida que asocia dos materias activas complementarias, metalaxil 
+(sistemico) y mancozeb (contacto). Control de mildiu en viña, patata, 
+tomate, berenjena y tabaco. Control de alternaria en patata.</td>
+ <tr>
+<tr>
+ <td class="insect">ALCOR</td>
+ <td>Ingrediente activo25% metalaxil</td>
+ <td hidden="true"> <img></td>
+ <td>Berenjena, Cítricos, Coles, Lechuga, patata, Tomate, Vid de mesa, Vid de vinificación</td>
+ <td>Aguado, Mildiu</td>
+ <td>ALCOR está compuesto de metalaxil, fungicida de acción preventivo y 
+curativo, registrado en numerosos cultivos y altamente eficaz en el control 
+de mildiu y fitophtora. </td>
+ <tr>
+<tr>
+ <td class="insect">CHAMANE</td>
+ <td>Ingrediente activo25% azoxistrobin</td>
+<td hidden="true"> <img></td>
+ <td>cereal, espárrago, Guisante para grano, Guisante verde</td>
+ <td>Helmintosporium, Royaroya, pardaseptoria, tritici</td>
+ <td>CHAMANE®es un fungicida del grupo de las estrobilurinas con acción sistémica y 
+translaminar y efecto preventivo/curativo que impide la germinación de las 
+esporas e inhibe el crecimiento del hongo.</td>
+ <tr>
+<tr>
+ <td class="insect">PROPELLER</td>
+ <td>Ingrediente activo35% fosetil–al35% mancozeb</td>
+ <td hidden="true"> <img></td>
+ <td></td>
+ <td></td>
+ <td>Asociación de un fungicida sistémico y de un fungicida de contacto, con 
+efecto preventivo y curativo de mildius en el cultivo de viña y de patata.</td>
+ <tr>
+<tr>
+ <td class="insect">optix disperss</td>
+ <td>Ingrediente activo80% fosetil–al</td>
+ <td hidden="true"> <img></td>
+ <td>Cítricos, Vid de mesa, Vid de vinificación</td>
+ <td>Loading...</td>
+ <td>OPTIX® DISPERSS®esun fungicidasistémicoabase defosfonatos. La materia activa Fosetil-AI es conocida por su acción 
+estimuladora en los mecanismos de defensa natural de las plantas. El 
+Fosetil-AI tiene propiedades sistémicas que hacen que su aplicación sea 
+óptima durante los periodos de crecimiento activos. Su acción es 
+principalmente preventiva y se puede emplear en un programa con fungicida 
+de contacto</td>
+ <tr>
+<tr>
+ <td class="insect">SACRON PROTECT</td>
+ <td>Ingrediente activo4% cimoxanilo46.5% mancozeb</td>
+ <td hidden="true"> <img></td>
+ <td>patata, Vid de mesa, Vid de vinificación</td>
+ <td>Mildiu</td>
+ <td>SACRON® PROTECT es un fungicida altamente eficaz gracias a la asociación de 
+dos materias activas complementarias (cimoxanilo y mancozeb) que 
+proporcionan una acción de contacto, penetrante, curativa y 
+antiesporulante. SACRON PROTECT controla eficazmente el mildiu de la patata 
+(Phytophthora infestans) y el mildiu de la vid (Plasmopara vitícola). 
+Además SACRON® PROTECT está formulado como Granulo Dispersable (WG) que 
+confiere al producto facilidad de disolución y mezcla.</td>
+ <tr>
+<tr>
+ <td class="insect">SACRON</td>
+ <td>Ingrediente activo45% cimoxanilo</td>
+ <td hidden="true"> <img></td>
+ <td>patata, Tomate, Vid de mesa, Vid de vinificación</td>
+ <td>Mildiu</td>
+ <td>SACRON® es un fungicidapenetrante, translaminar de contacto preventivo que contiene cimoxanilo por 
+lo que puede ejercer una acción curativa durante el periodo de incubación 
+de la enfermedad (1 a 2 días) indicado para el tratamiento del mildiu 
+velloso (Plasmopara viticola) en vid y mildiu (Phytophthora infestans) en patata y tomate.Granulo Dispersable (WG) que confiere al producto facilidad de disolución y 
+mezcla.</td>
+ <tr>
+<tr>
+ <td class="insect">VONDOZEB GD</td>
+ <td>Ingrediente activo75% mancozeb</td>
+ <td hidden="true"> <img></td>
+ <td></td>
+ <td></td>
+ <td>Ditiocarbamato, para controlar diversas enfermedades como mildiu, 
+alternaria, antracnosis. Formulado con la técnología Disperss.</td>
+ <tr>
+<tr>
+ <td class="insect">TALMAN COBRE</td>
+ <td>Ingrediente activo8% metalaxil40% oxicloruro de cobre</td>
+ <td hidden="true"> <img></td>
+ <td></td>
+ <td></td>
+ <td>Antimildiu que penetra de forma rápida en el tejido vegetal indicado para patata y crucíferas (brécol, repollo y coliflor).</td>
+ <tr>
+<tr>
+ <td class="insect">CALDO BORDELÉS RSR DISPERSS</td>
+ <td>Ingrediente activo20% sulfato cuprocalcico</td>
+ <td hidden="true"> <img></td>
+ <td>Alcachofa, Avellano, Berenjena, Castaño, Cebolla, Cerezo, Cítricos, Coles, Cucurbitáceas de 
+piel comestible, Cucurbitáceas de piel no comestible, Escarola, Fresales, Frutales de hueso, Frutales de pepita, Hortícolas de hoja, Judía verde, Lechuga, Manzano, Nogal, Olivo, patata, Pimiento, Remolacha azucarera, Tomate, Vid de mesa, Vid de vinificación, Zanahoria</td>
+ <td>Aguado, Alternaria, Antracnosis, Bacteriosis, Chancro, Cribado, Mildiu</td>
+ <td>Fungicida y bactericida recomendado para el control preventivo. Formulado 
+con la Técnología Disperss.</td>
+ <tr>
+<tr>
+ <td class="insect">NOVICURE</td>
+ <td>Ingrediente activo40% sulfato tribasico de cobre</td>
+ <td hidden="true"> <img></td>
+ <td></td>
+ <td></td>
+ <td>Fungicida y bactericida, formulado con la técnología Disperss.</td>
+ <tr>
+<tr>
+ <td class="insect">MITRUS</td>
+ <td>Ingrediente activo12.5% miclobutanil</td>
+ <td hidden="true"> <img></td>
+ <td>Alcachofa, Arándano, Cerezo, Cucurbitáceas de piel comestible, Cucurbitáceas de 
+piel no comestible, Espárrago, Fresales, Frutales de hueso, Frutales de pepita, Grosella, Lúpulo, Manzano, Pimiento, Remolacha azucarera, Tomate, Vid de mesa, Vid de 
+vinificación</td>
+ <td>Antracnosis, Black-rot, Moteado, Oidio, Oidiopsis, Roya</td>
+ <td>Fungicida sistemico con efecto preventivo y curativo para control de oidios 
+y royas en numerosos cultivos.</td>
+ <tr>
+<tr>
+ <td class="insect">TEBUZOL semillas</td>
+ <td>Ingrediente activo2.5% tebuconazol</td>
+ <td hidden="true"> <img></td>
+ <td></td>
+ <td></td>
+ <td>Fungicida de simientes que inhibe la síntesis del ergosterol del hongo 
+patógeno en semillas de cereal . Controla carbón desnudo y vestido, 
+helmintosporium.</td>
+ <tr>
+<tr>
+ <td class="insect">MICROTHIOL SPECIAL DISPERSS</td>
+ <td>Ingrediente activo80% azufre</td>
+ <td hidden="true"> <img></td>
+ <td></td>
+ <td></td>
+ <td>Anti oidio y acaricida, formulado con la técnologia Disperss, registrado en 
+cereal , frutales, hortícolas, olivar, remolacha, viña.</td>
+ <tr>
+<tr>
+ <td class="insect">THIOPRON 825</td>
+ <td>Ingrediente activo82.5% azufre</td>
+ <td hidden="true"> <img></td>
+ <td>Apio, Berenjena, cereal, Cerezo, Coles, Cucurbitáceas de piel comestible, Cucurbitáceas 
+de piel no comestible, Escarola, Fresales, Frutales de hueso, Frutales de 
+pepita, Frutales subtropicales, Frutales tropicales, guisante
+Guisante para grano, Guisante verde, Hortícolas de hoja, Judía para grano, Judía 
+verde, Lechuga, Lúpulo, Manzano, Olivo, Remolacha azucarera, Tomate, Vid de mesa, Vid de vinificación, Zanahoria</td>
+ <td>Eriófidos, Oidio</td>
+ <td>Preparado a base de azufre, que destaca por su excelente adherencia sobre 
+la superficie vegetal y su acción multisitio con triple acción sobre el 
+patógeno (Oídio): preventivo, curativo y erradicante.</td>
+ <tr>
+<tr>
+ <td class="insectUpl">AVANGUARD</td>
+ <td>Ingrediente activo10% Alfa cipermetrin</td>
+ <td hidden="true"> <img></td>
+ <td>Berenjena, cereal, Colza, Cucurbitáceas de piel comestible, Cucurbitáceas de piel </td>
+ <td></td>
+ <td>AVANGUARDes un insecticida a base de alfa cipermetrina, una sustancia activa 
+polivalente de la familia de los piretroides. Tiene un excelente efecto de 
+choque, y a su vez, una buena persistencia de acción. Actúa por contacto e 
+ingestión para el control de diversas plagas en distintos cultivos.</td>
+ <tr>
+<tr>
+ <td class="insectUpl">CEKUMETRIN 10 EC</td>
+ <td>Ingrediente activo10% cipermetrin</td>
+ <td hidden="true"> <img></td>
+ <td></td>
+ <td></td>
+ <td>Insecticida piretroide, activo por contacto e ingestión para controlar 
+numerosos insectos chupadores y masticadores. Registro en numerosos 
+cultivos.</td>
+ <tr>
+<tr>
+ <td class="insectUpl">FIELDER</td>
+ <td>Ingrediente activo5% Esfenvalerato</td>
+ <td hidden="true"> <img></td>
+ <td>cereal, Cerezo, Coles, Colza, Frutales de hueso, Frutales de pepita, patata, Remolacha azucarera, Tabaco, Tomate, Vid de mesa, Vid de vinificación</td>
+ <td>Orugas, Pulgones</td>
+ <td>FIELDER es un insecticida a base de esfenvalerato, insectcida piretroide 
+que actúa por contacto e ingestión. Presenta un fuerte efecto de choque y 
+controla un gran número de insectos: orugas, pulgones, pulguillas, tortix, 
+anarsia y psila. Es muy seguro para el cultivo y bastante resistente al 
+lavado</td>
+ <tr>
+<tr>
+ <td class="insectUpl">POLITHIOL</td>
+ <td>Ingrediente activo40% aceite parafínico</td>
+ <td hidden="true"> <img></td>
+ <td> Arándano, Avellano, Caqui, Castaño, Cerezo, Frambuesa, Frutales de hueso, Frutales de 
+pepita, Grosella, Kiwi, Manzano, Mora, Nogal, Vid de mesa, Vid de vinificación</td>
+ <td>Ácaros, Cochinilla blanca, Cochinillas, Eriófidos, Piojo de San José, Psila, Pulgón lanigero, Pulgones</td>
+ <td>POLITHIOL®es un insecticida-acaricida de uso profesional a base de aceite parafínico 
+y coformulado con azufre. Está destinado a combatir diferentes plagas como 
+el piojo de San José, cochinillas, ácaros, eriófidos, psila y pulgones</td>
+ <tr>
+<tr>
+ <td class="insectUpl">ovipron top</td>
+ <td>Ingrediente activo80% aceite parafínico</td>
+ <td hidden="true"> <img src="https://es.uplonline.com/product_type/leafs/JYbG5dhQCAhkGd1L8OK0HN5XHePkxrCP3vCTWMvY.png"></td>
+ <td> Arándano, Avellano, Bayas, Caqui, 
+Castaño, Cítricos, Frambuesa, Frutales de hueso, Frutales de pepita, Grosella, Kiwi, Manzano, Mora, Nogal, Vid de mesa, Vid de vinificación</td>
+ <td>Ácaros, Cochinillas, Eriófidos, Piojo de San José, Psila</td>
+ <td>OVIPRON® TOP es un acaricida e insecticida de amplio espectro que se aplica 
+mediante pulverización. El producto actúa principalmente mediante asfixia, 
+cubriendo el cuerpo de los insectos con una capa fina impermeable de gas 
+que bloquea los canales traqueales, impidiendo su respiración y provocando 
+su muerte.</td>
+ <tr>
+<tr>
+ <td class="insectUpl">CORMITE</td>
+ <td>Ingrediente activo1.8% abamectina</td>
+ <td hidden="true"> <img></td>
+ <td>Berenjena, Cítricos, Cucurbitáceas de piel comestible, Cucurbitáceas de piel no 
+comestible, Fresales, Lechuga, Manzano, Tomate, Vid de mesa, Vid de vinificación</td>
+ <td>Ácaros, Araña roja, Erinosis, Psila</td>
+ <td>Insecticida-Acaricida que actúa por contacto e ingestión. Acción 
+traslaminar y de sistemia localizada.</td>
+ <tr>
+<tr>
+ <td class="insectUplGreen">DEVRINOL 45 F</td>
+ <td>Ingrediente activo45% napropamida</td>
+ <td hidden="true"> <img></td>
+ <td></td>
+ <td></td>
+ <td>Herbicida selectivo, residual para aplicación en pre-emergencia de la 
+maleza en cultivo de colza, frutales, cítricos, viña entre otros.</td>
+ <tr>
+<tr>
+ <td class="insectUplGreen">SILBOS</td>
+ <td>Ingrediente activo45.5% pendimetalina</td>
+ <td hidden="true"> <img src="https://es.uplonline.com/product_type/leafs/JJb9wICgMhSFjdvcx4KXSI2558RY5PTnaVLfy9Fl.png"></td>
+ <td>
+Ajo, Alcachofa , Algodón, Cebolla, Cereal, Cerezo, Cítricos, Coles, Fresales, Frutales de 
+hueso, Frutales de pepita, Girasol, Guisante, Guisante para grano, Guisante verde, Habas, Lechuga, Maíz, Manzano, patata, Tabaco, Tomate, Vid de mesa, Vid de 
+vinificación, Zanahoria</td>
+ <td>Dicotiledóneas, Gramíneas </td>
+ <td>SILBOS®esunherbicida para el control de malas hierbas anuales (gramíneas y de hoja 
+ancha) en pre- emergencia o post-emergencia precoz, basado en la materia 
+activa pendimetalina. Permite un control de malas hierbas desde el inicio 
+del ciclo de cultivo evitando la competencia de las Malas hierbas con el 
+cultivo durante los primeros estadios.</td>
+ <tr>
+<tr>
+ <td class="insectUplGreen">MCPA ACIDO 50 UPL</td>
+ <td>Ingrediente activo50% MCPA (SL AMINA)</td>
+ <td hidden="true"> <img src="https://es.uplonline.com/product_type/leafs/JJb9wICgMhSFjdvcx4KXSI2558RY5PTnaVLfy9Fl.png"></td>
+ <td></td>
+ <td></td>
+ <td>Herbicida para control de malezas en post emergencia, registrado en 
+numerosos cultivos (arroz, trigo, cebada, olivar, cítricos, ect.)</td>
+ <tr>
+<tr>
+ <td class="insectUplGreen">MISSION</td>
+ <td>Ingrediente activo20% diquat (bromuro)</td>
+ <td hidden="true"> <img src="https://es.uplonline.com/product_type/leafs/JJb9wICgMhSFjdvcx4KXSI2558RY5PTnaVLfy9Fl.png"></td>
+ <td></td>
+ <td></td>
+ <td>Herbicida de post emergencia, desecante y defoliante registrado en patata, 
+remolacha, ornamentales, ect.</td>
+ <tr>
+<tr>
+ <td class="insectUplPurple">CEKU-HUMECTANTE</td>
+ <td>Ingrediente activo 20% mojante no iónico</td>
+ <td hidden="true"> <img></td>
+ <td></td>
+ <td></td>
+ <td>Mojante para optimizar la aplicación de fungicidas, insecticidas, 
+herbicidas.</td>
+ <tr>
+</table>
+
+<script>
+function myFunction() {
+var vf=true;
+var combo;
+var input, filter, table, tr, td, i, txtValue; 
+
+ 
+/*if(combo===""){
+//vf=false;
+ //}
+  if(!combo){
+  combo= document.getElementById("agrogalia_cosechas").value;
+ filter =combo.toUpperCase(); alert("1 "+filter);
+ }else{*/
+ combo= document.getElementById("agrogalia_cosechas").value;
+ filter =combo.toUpperCase();
+ 
+
+
+ table = document.getElementById("myTable");
+ tr = table.getElementsByTagName("tr");
+ for (i = 0; i < tr.length; i++) {
+  td = tr[i].getElementsByTagName("td")[3];
+  if (td) {
+   txtValue = td.textContent || td.innerText;
+  // alert(txtValue)
+   if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    tr[i].style.display = "";
+   } else {
+    tr[i].style.display = "none";
+   }
+  }
+  }
+ 
+}
+</script>
+
+</body>
+</html>
